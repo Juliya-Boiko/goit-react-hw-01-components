@@ -2,26 +2,27 @@ import PropTypes from 'prop-types';
 import { ProfileContainer, Avatar, Username, UserTag, UserLocation, StatsList, StatsListItem, StatsListLabel, StatsListValue } from './Profile.styled';
 
 export const Profile = ({ user }) => {
+    const { username, tag, location, avatar, stats } = user;
     return <ProfileContainer>
             <Avatar
-                src={user.avatar}
-                alt={user.username}
+                src={avatar}
+                alt={username}
             />
-            <Username>{user.username}</Username>
-            <UserTag>@{user.tag}</UserTag>
-            <UserLocation>{user.location}</UserLocation>
+            <Username>{username}</Username>
+            <UserTag>@{tag}</UserTag>
+            <UserLocation>{location}</UserLocation>
         <StatsList>
             <StatsListItem>
                 <StatsListLabel>Followers</StatsListLabel>
-                <StatsListValue>{user.stats.followers}</StatsListValue>
+                <StatsListValue>{stats.followers}</StatsListValue>
             </StatsListItem>
             <StatsListItem>
                 <StatsListLabel>Views</StatsListLabel>
-                <StatsListValue>{user.stats.views}</StatsListValue>
+                <StatsListValue>{stats.views}</StatsListValue>
             </StatsListItem>
             <StatsListItem>
                 <StatsListLabel>Likes</StatsListLabel>
-                <StatsListValue>{user.stats.likes}</StatsListValue>
+                <StatsListValue>{stats.likes}</StatsListValue>
             </StatsListItem>
         </StatsList>
     </ProfileContainer>
@@ -40,16 +41,3 @@ Profile.propTypes = {
         })
     }).isRequired
 }
-// //=================STULES
-// // import styles from './UserInfo.module.css';
-
-//     // <div class="description">
-//     //     <img
-//     //     src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-//     //     alt="User avatar"
-//     //     class="avatar"
-//     //     />
-//     //     <p class="name">Petra Marica</p>
-//     //     <p class="tag">@pmarica</p>
-//     //     <p class="location">Salvador, Brasil</p>
-//     // </div>

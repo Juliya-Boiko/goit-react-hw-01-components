@@ -4,16 +4,19 @@ export const ProfileContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
-    outline: 1px solid red;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
 `;
 
 export const Avatar = styled.img`
     display: block;
-    height: 120px;
+    height: 100px;
     margin-bottom: 20px;
-    border-radius: 50%;
-    border: 1px solid green;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
 `;
 
 export const Username = styled.p`
@@ -35,6 +38,8 @@ export const UserLocation = styled.p`
 
 export const StatsList = styled.ul`
     display: flex;
+    border-radius: 20px;
+    overflow: hidden;
 `;
 
 export const StatsListItem = styled.li`
@@ -44,7 +49,6 @@ export const StatsListItem = styled.li`
     align-items: center;
     padding: 20px;
     background-color: #eee;
-    border: 1px solid grey;
 `;
 
 export const StatsListLabel = styled.p`
