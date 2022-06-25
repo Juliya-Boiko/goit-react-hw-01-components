@@ -7,7 +7,7 @@ export const ProfileContainer = styled.div`
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: ${props => props.theme.colors.secondaryColor};
     box-shadow: 0 35px 80px rgba(0,0,0,0.15);
 `;
 
@@ -28,12 +28,12 @@ export const Username = styled.p`
 export const UserTag = styled.p`
     margin-bottom: 20px;
     font-weight: 700;
-    color: grey;
+    color: ${props => props.theme.colors.secondaryColorShadeDark};
 `;
 
 export const UserLocation = styled.p`
     margin-bottom: 20px;
-    color: grey;
+    color: ${props => props.theme.colors.secondaryColorShadeDark};
 `;
 
 export const StatsList = styled.ul`
@@ -48,12 +48,11 @@ export const StatsListItem = styled.li`
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #eee;
+    color: ${props => props.theme.colors.secondaryColorShadeDark};
 `;
 
 export const StatsListLabel = styled.p`
     margin-bottom: 5px;
-    color: grey;
 `;
 
 export const StatsListValue = styled.p`
