@@ -23,7 +23,7 @@ export const OnLineStatus = styled.span`
     height: 10px;
     border-radius: 50%;
     margin-bottom: 20px;
-    background-color: ${props => props.children ? props.theme.colors.isOnline : props.theme.colors.notOnline};
+    background-color: ${props => props.status ? props.theme.colors.isOnline : props.theme.colors.notOnline};
 `;
 export const Avatar = styled.img`
     display: block;

@@ -11,14 +11,6 @@ export const ProfileContainer = styled.div`
     box-shadow: 0 35px 80px rgba(0,0,0,0.15);
 `;
 
-export const Avatar = styled.img`
-    display: block;
-    height: 100px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
-`;
-
 export const Username = styled.p`
     margin-bottom: 20px;
     font-weight: 700;

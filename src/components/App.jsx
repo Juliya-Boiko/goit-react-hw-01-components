@@ -1,13 +1,13 @@
 import 'normalize.css';
-import { MainContainer } from './App.styled';
+import { MainContainer } from './common/MainContainer.styled';
 import { Profile } from "./Profile/Profile";
 import { Statistics } from "./Statistics/Statistics";
 import { FriendsList } from "./FriendList/FriendList";
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
-import userInfo from './JsonFiles/user.json';
-import statData from './JsonFiles/data.json';
-import friendsList from './JsonFiles/friends.json';
-import transactionsData from './JsonFiles/transactions.json';
+import userInfo from '../userdata/user.json';
+import statData from '../userdata/data.json';
+import friendsList from '../userdata/friends.json';
+import transactionsData from '../userdata/transactions.json';
 
 export const App = () => {
   return (

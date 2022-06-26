@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { getRandomHexColor } from '../../utils/getRandomColor';
 
 export const StatisticsContainer = styled.div`
     display: flex;
@@ -29,5 +30,5 @@ export const StatisticsListItem = styled.li`
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: ${props => props.theme.colors.secondaryColorShadeLight};
+    background-color: ${getRandomHexColor};
 `;
