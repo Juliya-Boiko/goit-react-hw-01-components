@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import { UserAvatar } from '../common/UserAvatar.styled';
-import { ProfileContainer, Username, UserTag, UserLocation, StatsList, StatsListItem, StatsListLabel, StatsListValue } from './Profile.styled';
+import { Section } from '../common/Section.styled';
+import { Username, UserTag, UserLocation, StatsList, StatsListItem, StatsListLabel, StatsListValue } from './Profile.styled';
 
 export const Profile = ({ user }) => {
     const { username, tag, location, avatar, stats } = user;
-    return <ProfileContainer>
+    return <Section>
             <UserAvatar
                 src={avatar}
                 alt={username}
@@ -26,7 +27,7 @@ export const Profile = ({ user }) => {
                 <StatsListValue>{stats.likes}</StatsListValue>
             </StatsListItem>
         </StatsList>
-    </ProfileContainer>
+    </Section>
 }
 
 Profile.propTypes = {
